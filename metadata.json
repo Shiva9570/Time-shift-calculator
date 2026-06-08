@@ -1,0 +1,6 @@
+{
+  "name": "Time Calculator",
+  "description": "Calculate your checkout or end time by adding exactly 8 hours and 45 minutes to your arrival time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
