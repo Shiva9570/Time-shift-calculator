@@ -144,7 +144,7 @@ export default function App() {
   const handleSaveToHistory = () => {
     const today = new Date().toISOString().split("T")[0];
     const newLog: ShiftLog = {
-      id: crypto.randomUUID(),
+      id: typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).substring(2, 11),
       date: today,
       arrivalTime,
       departureTime: calculatedEndTime,
